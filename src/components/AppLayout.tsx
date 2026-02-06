@@ -73,7 +73,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
               {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
             </Button> */}
             <Button variant="ghost" size="icon" className="h-8 w-8" asChild>
-              <a href="https://github.com/buainoai" target="_blank" rel="noopener noreferrer nofollow">
+              <a href="https://github.com/buainoai/ai-advanced-engineer-learning" target="_blank" rel="noopener noreferrer nofollow">
                 <Github className="h-4 w-4" />
               </a>
             </Button>
