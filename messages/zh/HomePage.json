@@ -1,0 +1,22 @@
+{
+  "title": "现代Web应用",
+  "subtitle": "基于 Next.js 构建",
+  "description": "一个功能强大、可扩展且美观的 Web 应用程序脚手架。",
+  "keywords": "nextjs, react, typescript, tailwindcss",
+  "hero": {
+    "badge": "版本 1.0.0",
+    "title": "欢迎来到",
+    "highlight": "你的应用",
+    "desc": "使用我们强大且灵活的模板开始构建你的梦想应用程序。",
+    "start": "开始使用",
+    "stickerBook": "文档"
+  },
+  "features": {
+    "accurate": "高性能",
+    "accurateDesc": "利用最新的 Web 技术优化速度和效率。",
+    "free": "开源",
+    "freeDesc": "MIT 许可。免费用于个人和商业项目。",
+    "characters": "可定制",
+    "charactersDesc": "轻松调整设计和功能以满足你的特定需求。"
+  }
+}

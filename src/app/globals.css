@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* 
+  Japanese Aesthetics (Wabi-Sabi & Modern Minimal)
+  - Background: Warm off-white (Rice Paper / Washi)
+  - Primary: Traditional Indigo (Aizumi) for depth and trust
+  - Secondary: Soft Clay/Sand (Tsuchi) for warmth
+  - Accent: Muted Vermilion (Shuiro) or Matcha (Maccha)
+  - Text: Dark Charcoal (Sumi) instead of pure black
+*/
+
+:root {
+  --radius: 0.5rem;
+  
+  /* Washi Paper Background */
+  --background: oklch(0.98 0.01 90); /* Very light warm grey */
+  --foreground: oklch(0.25 0.02 260); /* Sumi Ink - Dark Blue-Grey */
+
+  /* White Cards with slight warmth */
+  --card: oklch(1 0 0); 
+  --card-foreground: oklch(0.25 0.02 260);
+
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.25 0.02 260);
+
+  /* Aizumi (Indigo) - Deep, professional, calm */
+  --primary: oklch(0.45 0.12 260); 
+  --primary-foreground: oklch(0.98 0.01 90);
+
+  /* Tsuchi (Earth/Sand) - Soft support color */
+  --secondary: oklch(0.94 0.03 90); 
+  --secondary-foreground: oklch(0.35 0.04 260);
+
+  /* Asagi (Faint Blue-Green) - Muted backgrounds */
+  --muted: oklch(0.96 0.01 200);
+  --muted-foreground: oklch(0.55 0.04 260);
+
+  /* Sakura (Cherry Blossom) or light interactive state */
+  --accent: oklch(0.95 0.03 340);
+  --accent-foreground: oklch(0.45 0.12 260);
+
+  /* Shuiro (Vermilion) - Error/Destructive but softer */
+  --destructive: oklch(0.65 0.18 30);
+  --destructive-foreground: oklch(0.98 0.01 90);
+
+  --border: oklch(0.92 0.01 90);
+  --input: oklch(0.92 0.01 90);
+  --ring: oklch(0.70 0.10 260); /* Lighter Indigo for focus */
+
+  /* Sidebar - Dark Indigo Block for Contrast */
+  /* --sidebar: oklch(0.98 0.01 90); */ 
+  /* Actually, let's make sidebar slightly distinct */
+  --sidebar: oklch(0.96 0.01 90); 
+  --sidebar-foreground: oklch(0.25 0.02 260);
+  --sidebar-primary: oklch(0.45 0.12 260);
+  --sidebar-primary-foreground: oklch(0.98 0.01 90);
+  --sidebar-accent: oklch(0.92 0.02 90);
+  --sidebar-accent-foreground: oklch(0.25 0.02 260);
+  --sidebar-border: oklch(0.90 0.01 90);
+  --sidebar-ring: oklch(0.70 0.10 260);
+}
+
+.dark {
+  /* Dark Mode: Deep Indigo/Charcoal Backgrounds */
+  --background: oklch(0.20 0.03 260); /* Deep Indigo */
+  --foreground: oklch(0.96 0.01 90); /* Off-white text */
+
+  --card: oklch(0.25 0.03 260); /* Slightly lighter indigo */
+  --card-foreground: oklch(0.96 0.01 90);
+
+  --popover: oklch(0.25 0.03 260);
+  --popover-foreground: oklch(0.96 0.01 90);
+
+  --primary: oklch(0.70 0.12 260); /* Lighter Indigo for visibility */
+  --primary-foreground: oklch(0.20 0.03 260);
+
+  --secondary: oklch(0.30 0.03 260);
+  --secondary-foreground: oklch(0.96 0.01 90);
+
+  --muted: oklch(0.30 0.03 260);
+  --muted-foreground: oklch(0.70 0.04 260);
+
+  --accent: oklch(0.30 0.05 340);
+  --accent-foreground: oklch(0.96 0.01 90);
+
+  --destructive: oklch(0.60 0.18 30);
+  
+  --border: oklch(0.35 0.03 260);
+  --input: oklch(0.35 0.03 260);
+  --ring: oklch(0.60 0.10 260);
+
+  --sidebar: oklch(0.18 0.03 260);
+  --sidebar-foreground: oklch(0.96 0.01 90);
+  --sidebar-primary: oklch(0.70 0.12 260);
+  --sidebar-primary-foreground: oklch(0.96 0.01 90);
+  --sidebar-accent: oklch(0.30 0.03 260);
+  --sidebar-accent-foreground: oklch(0.96 0.01 90);
+  --sidebar-border: oklch(0.35 0.03 260);
+  --sidebar-ring: oklch(0.60 0.10 260);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/20;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}

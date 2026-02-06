@@ -1,0 +1,22 @@
+{
+  "title": "Modern Web Application",
+  "subtitle": "Built with Next.js",
+  "description": "A powerful, scalable, and beautiful web application scaffold.",
+  "keywords": "nextjs, react, typescript, tailwindcss",
+  "hero": {
+    "badge": "Version 1.0.0",
+    "title": "Welcome to",
+    "highlight": "Your App",
+    "desc": "Start building your dream application with our robust and flexible template.",
+    "start": "Get Started",
+    "stickerBook": "Documentation"
+  },
+  "features": {
+    "accurate": "High Performance",
+    "accurateDesc": "Optimized for speed and efficiency using the latest web technologies.",
+    "free": "Open Source",
+    "freeDesc": "MIT Licensed. Free to use for personal and commercial projects.",
+    "characters": "Customizable",
+    "charactersDesc": "Easily adapt the design and functionality to meet your specific needs."
+  }
+}
