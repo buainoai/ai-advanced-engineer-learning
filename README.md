@@ -1,6 +1,7 @@
 # Generic Next.js Scaffold
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbuainoai%2Fai-advanced-engineer-learning&env=NEXT_PUBLIC_GOOGLE_ADSENSE_ID,NEXT_PUBLIC_GA_ID&envDescription=Optional%20environment%20variables%20for%20Google%20AdSense%20and%20Analytics&envLink=https%3A%2F%2Fgithub.com%2Fbuainoai%2Fai-advanced-engineer-learning%23environment-setup&project-name=my-nextjs-app&repository-name=my-nextjs-app)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/buainoai/ai-advanced-engineer-learning)
 
 A high-performance, modern web application scaffold built with:
 
